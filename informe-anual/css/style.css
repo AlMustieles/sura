@@ -837,10 +837,15 @@ p span{
         width:100px
     }
     #menufix{
-        margin-top: -60px;
-        height: 80%;
-        overflow: scroll;
+        margin-top: -20px;
+        max-height:250px;
+        overflow-y: auto;
     }
+    #lista-ipad{
+        margin-left: 0; /* Elimina cualquier margen a la izquierda */
+
+    }
+
 
     .menucont p.txttitleh{
         display:none
@@ -963,6 +968,10 @@ p span{
         padding-top:30px;
         padding-left:100px
     }
+    .margen-ipad-less{
+        padding-top:30px;
+        padding-left:50px
+    }
     .margen-ipad-plus{
         margin-left:100px
     }
@@ -991,16 +1000,17 @@ p span{
         width:80%
     }
 }
-@media (min-width:768px) and (max-width:1068px){
+@media (min-width:767px) and (max-width:1068px){
     #menufix{
-        display:block
+        display:block;
     }
     .menucont .btnshead{
-        display:inline
+        display:inline;
     }
     .menucont .btnshead-l{
-        display:inline
+        display:inline;
     }
+
 }
 @media (min-width:1024px) and (max-width:1068px){
     .navbar{
