@@ -1,3 +1,4 @@
+
 @font-face{
     font-family:SuraSans-Regular;
     src:url(../fonts/sura/SuraSans-Regular.otf) format("opentype");
@@ -23,7 +24,7 @@
 body{
     font-family:"SuraSans-Regular",sans-serif;
     background-color:#fff;
-    overflow-x:hidden
+    overflow-x:hidden;
 }
 img{
     width:100%
@@ -843,10 +844,14 @@ p span{
     }
     #lista-ipad{
         margin-left: 0; /* Elimina cualquier margen a la izquierda */
-
+    }
+    .centrado-ipad{
+        text-align: center;
     }
 
-
+    .margen-left-60{
+        margin-left: 0px;
+    }
     .menucont p.txttitleh{
         display:none
     }
@@ -1001,6 +1006,9 @@ p span{
     }
 }
 @media (min-width:767px) and (max-width:1068px){
+    body{
+        width: auto;
+    }
     #menufix{
         display:block;
     }
@@ -1169,8 +1177,10 @@ p span{
 @media (max-width:550px){
     body{
         text-align:left;
-        overflow-x:hidden
+        overflow-x:hidden;
+        width: auto;
     }
+
     a.btnseemore{
         margin-bottom:40px
     }
